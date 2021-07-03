@@ -25,7 +25,7 @@ public class Koneksi {
     public void config(){
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost/dbform", "root", "");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/dbform", "root", "");
             stm = con.createStatement();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Koneksi Gagal"+e.getMessage());

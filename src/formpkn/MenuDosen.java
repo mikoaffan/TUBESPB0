@@ -106,6 +106,8 @@ public class MenuDosen extends javax.swing.JFrame {
 
     private void btnjadwalujianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnjadwalujianActionPerformed
         // TODO add your handling code here:
+        new Jadwal().show();
+        this.dispose();
     }//GEN-LAST:event_btnjadwalujianActionPerformed
 
     private void btnkembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkembaliActionPerformed

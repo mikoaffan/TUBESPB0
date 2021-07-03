@@ -58,11 +58,21 @@ public class MenuAdmin extends javax.swing.JFrame {
         btnpenjadwalan.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         btnpenjadwalan.setForeground(new java.awt.Color(0, 0, 0));
         btnpenjadwalan.setText("Penjadwalan Ujian");
+        btnpenjadwalan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnpenjadwalanActionPerformed(evt);
+            }
+        });
 
         btnnilaipkn.setBackground(new java.awt.Color(255, 255, 255));
         btnnilaipkn.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         btnnilaipkn.setForeground(new java.awt.Color(0, 0, 0));
         btnnilaipkn.setText("Nilai PKN");
+        btnnilaipkn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnnilaipknActionPerformed(evt);
+            }
+        });
 
         btnkembali.setBackground(new java.awt.Color(255, 255, 255));
         btnkembali.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
@@ -127,6 +137,8 @@ public class MenuAdmin extends javax.swing.JFrame {
 
     private void btnapprovalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnapprovalActionPerformed
         // TODO add your handling code here:
+        new Approval().show();
+        this.dispose();
     }//GEN-LAST:event_btnapprovalActionPerformed
 
     private void btnkembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkembaliActionPerformed
@@ -135,6 +147,18 @@ public class MenuAdmin extends javax.swing.JFrame {
         pe.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnkembaliActionPerformed
+
+    private void btnnilaipknActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnilaipknActionPerformed
+        // TODO add your handling code here:
+        new PenilaianPKN().show();
+        this.dispose();
+    }//GEN-LAST:event_btnnilaipknActionPerformed
+
+    private void btnpenjadwalanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpenjadwalanActionPerformed
+        // TODO add your handling code here:
+        new Penjadwalan().show();
+        this.dispose();
+    }//GEN-LAST:event_btnpenjadwalanActionPerformed
 
     /**
      * @param args the command line arguments

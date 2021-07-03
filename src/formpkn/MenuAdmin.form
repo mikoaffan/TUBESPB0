@@ -133,6 +133,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Penjadwalan Ujian"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnpenjadwalanActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnnilaipkn">
           <Properties>
@@ -147,6 +150,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Nilai PKN"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnnilaipknActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnkembali">
           <Properties>

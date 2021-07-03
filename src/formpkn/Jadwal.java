@@ -181,6 +181,8 @@ public class Jadwal extends javax.swing.JFrame {
 
     private void btnkembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkembaliActionPerformed
         // TODO add your handling code here:
+        new MenuDosen().show();
+        this.dispose();
     }//GEN-LAST:event_btnkembaliActionPerformed
 
     /**

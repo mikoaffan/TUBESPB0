@@ -243,7 +243,7 @@ public class Registrasi extends javax.swing.JFrame {
                     hapuslayar();
                 } else {
                     Class.forName("com.mysql.jdbc.Driver");
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/coba", "root", "");
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbform", "root", "");
                     st = con.createStatement();
                     String simpan = "INSERT INTO trylog VALUES('" + txtusername.getText() + "','"+ String.valueOf(txtpassword.getPassword()) + "','" + txtemail.getText() + "')";
                     st = con.createStatement();
